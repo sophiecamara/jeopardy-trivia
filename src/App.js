@@ -7,27 +7,13 @@ function App () {
   const[question, setQuestion]=useState([])
   const[toggle,setToggle]=useState("false")
   const[score, setScore]=useState(0)
-  // state = {
-  //   questions: [],
-  //   question: {},
-  //   toggle: false,
-  //   score: 0
-  // }
+ 
    useEffect(()=>{
      setTimeout(()=> setQuestion(data, 5000))
 const decrement=()=>{
   score ===question.value? :ternary operator)
   alert("try agaim")
 }
-  // decrement = () => {
-  //   if (this.state.score > this.state.question.value) {
-  //     this.setState({ score: this.state.score - this.state.question.value })
-
-  //   } else {
-  //     alert('you lost')
-  //   }
-
-  // }
 
  const  handleClick = () => {
     fetch('http://jservice.io/api/random')
@@ -36,10 +22,8 @@ const decrement=()=>{
         console.log(data[0])
         setQuestion(question.data[0] )
       })
-      //.then(() => console.log(this.state.question))
       .catch(error => console.error(error))
   }
- 
  
     return (
       <>
